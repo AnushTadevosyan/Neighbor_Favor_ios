@@ -62,8 +62,6 @@ class LoginViewController: UIViewController {
         APIManager.shareInstance.loginUserAPI(login: login)
         
         let userID = defaults.value(forKey: "userID")
-        print("login button")
-        print(defaults.bool(forKey: "isUser"))
         if(defaults.bool(forKey: "isUser")==true
            && (userID != nil)){
             

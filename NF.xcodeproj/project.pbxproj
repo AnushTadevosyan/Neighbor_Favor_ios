@@ -14,6 +14,10 @@
 		E3087836278A43AF00F73D76 /* utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3087835278A43AF00F73D76 /* utilities.swift */; };
 		E3087839278A492C00F73D76 /* loginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3087838278A492C00F73D76 /* loginModel.swift */; };
 		E308783B278A49B600F73D76 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E308783A278A49B600F73D76 /* APIManager.swift */; };
+		E33A0ADB278F527F00FD9E19 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33A0ADA278F527F00FD9E19 /* DashboardViewController.swift */; };
+		E33A0ADD278F5A7400FD9E19 /* FavorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33A0ADC278F5A7400FD9E19 /* FavorTableViewCell.swift */; };
+		E33A0ADF278F5AC800FD9E19 /* favorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33A0ADE278F5AC800FD9E19 /* favorModel.swift */; };
+		E33A0AE2278F5C5200FD9E19 /* NeedToFix.rtf in Resources */ = {isa = PBXBuildFile; fileRef = E33A0AE1278F5C5200FD9E19 /* NeedToFix.rtf */; };
 		E35F6D75278A1E2D00BA4686 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35F6D74278A1E2D00BA4686 /* AppDelegate.swift */; };
 		E35F6D77278A1E2D00BA4686 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35F6D76278A1E2D00BA4686 /* SceneDelegate.swift */; };
 		E35F6D79278A1E2D00BA4686 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35F6D78278A1E2D00BA4686 /* ViewController.swift */; };
@@ -60,6 +64,10 @@
 		E3087835278A43AF00F73D76 /* utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = utilities.swift; sourceTree = "<group>"; };
 		E3087838278A492C00F73D76 /* loginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginModel.swift; sourceTree = "<group>"; };
 		E308783A278A49B600F73D76 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		E33A0ADA278F527F00FD9E19 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		E33A0ADC278F5A7400FD9E19 /* FavorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavorTableViewCell.swift; sourceTree = "<group>"; };
+		E33A0ADE278F5AC800FD9E19 /* favorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = favorModel.swift; sourceTree = "<group>"; };
+		E33A0AE1278F5C5200FD9E19 /* NeedToFix.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = NeedToFix.rtf; sourceTree = "<group>"; };
 		E35F6D71278A1E2D00BA4686 /* NF.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NF.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E35F6D74278A1E2D00BA4686 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E35F6D76278A1E2D00BA4686 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -160,8 +168,26 @@
 			children = (
 				E3087838278A492C00F73D76 /* loginModel.swift */,
 				E3F413E7278E94A8002018F8 /* registerModel.swift */,
+				E33A0ADE278F5AC800FD9E19 /* favorModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		E33A0AD9278F522C00FD9E19 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				E33A0ADA278F527F00FD9E19 /* DashboardViewController.swift */,
+				E33A0ADC278F5A7400FD9E19 /* FavorTableViewCell.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		E33A0AE0278F5C3500FD9E19 /* FIXES */ = {
+			isa = PBXGroup;
+			children = (
+				E33A0AE1278F5C5200FD9E19 /* NeedToFix.rtf */,
+			);
+			path = FIXES;
 			sourceTree = "<group>";
 		};
 		E35F6D68278A1E2D00BA4686 = {
@@ -189,6 +215,8 @@
 		E35F6D73278A1E2D00BA4686 /* NF */ = {
 			isa = PBXGroup;
 			children = (
+				E33A0AE0278F5C3500FD9E19 /* FIXES */,
+				E33A0AD9278F522C00FD9E19 /* Dashboard */,
 				E3F413E6278E93B6002018F8 /* Register */,
 				E3087837278A492000F73D76 /* Model */,
 				E3087832278A3A9000F73D76 /* API */,
@@ -349,6 +377,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E35F6D81278A1E2E00BA4686 /* LaunchScreen.storyboard in Resources */,
+				E33A0AE2278F5C5200FD9E19 /* NeedToFix.rtf in Resources */,
 				E35F6D7E278A1E2E00BA4686 /* Assets.xcassets in Resources */,
 				E35F6D7C278A1E2D00BA4686 /* Main.storyboard in Resources */,
 			);
@@ -482,10 +511,13 @@
 				E3F413EA278E94BB002018F8 /* RegisterViewController.swift in Sources */,
 				E3087836278A43AF00F73D76 /* utilities.swift in Sources */,
 				E35F6D79278A1E2D00BA4686 /* ViewController.swift in Sources */,
+				E33A0ADF278F5AC800FD9E19 /* favorModel.swift in Sources */,
 				E35F6D75278A1E2D00BA4686 /* AppDelegate.swift in Sources */,
 				E3F413E8278E94A8002018F8 /* registerModel.swift in Sources */,
 				E3F413EC278E94D6002018F8 /* RegisterTableViewCell.swift in Sources */,
+				E33A0ADB278F527F00FD9E19 /* DashboardViewController.swift in Sources */,
 				E35F6D77278A1E2D00BA4686 /* SceneDelegate.swift in Sources */,
+				E33A0ADD278F5A7400FD9E19 /* FavorTableViewCell.swift in Sources */,
 				E3087834278A3ABE00F73D76 /* LoginViewController.swift in Sources */,
 				E3087839278A492C00F73D76 /* loginModel.swift in Sources */,
 				E308782F278A39AC00F73D76 /* constants.swift in Sources */,

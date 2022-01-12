@@ -79,18 +79,20 @@ class RegisterViewController: UIViewController{
         
     
 
-            APIManager.shareInstance.registerUserAPI(register: registerr) { (isSuccess, str)  in
+        APIManager.shareInstance.registerUserAPI(register: registerr) { [self] (isSuccess, str)  in
                 if isSuccess{
                     let alert = UIAlertController(title: "Alert", message: str, preferredStyle: .alert)
                     self.present(alert, animated: true, completion: nil)
                     alert.dismiss(animated: true, completion: nil)
                     print("Success")
+                    self.performSegue(withIdentifier: "registertodash", sender: self.registerBtn)
                 }
                 else{
                     let alert = UIAlertController(title: "Alert", message: str, preferredStyle: .alert)
                     self.present(alert, animated: true, completion: nil)
                     alert.dismiss(animated: true, completion: nil)
                     print("Fail")
+                    return
                 }
             }
     }

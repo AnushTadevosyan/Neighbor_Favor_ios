@@ -9,6 +9,13 @@ import UIKit
 
 class FavorTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var favorTitleLbl: UILabel!
+    
+    @IBOutlet weak var favorDetail: UILabel!
+    
+    @IBOutlet weak var phoneNumLbl: UILabel!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -84,8 +84,11 @@ class APIManager{
              let json = try JSONSerialization.jsonObject(with: data!, options: [])
                         if(response.response?.statusCode == 200){
                             completionHandler(true, "User registered successfully")
+                        
+                            
                         }else{
                             completionHandler(false,"Please try again")
+                            return 
                         }
 //                    print(json)
                         
