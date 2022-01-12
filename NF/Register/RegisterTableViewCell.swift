@@ -9,15 +9,25 @@ import UIKit
 
 class RegisterTableViewCell: UITableViewCell {
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
+    
+    @IBOutlet weak var infoLbl: UILabel!
+    
+    @IBOutlet weak var textFld: UITextField!
+    
+    @IBOutlet weak var recView: UIView!
+    
+    
+    
+//    override func awakeFromNib() {
+//        super.awakeFromNib()
+//    }
+//
+//    override func setSelected(_ selected: Bool, animated: Bool) {
+//        super.setSelected(selected, animated: animated)
+//
+//       
+//    }
+    
+    
 
 }
